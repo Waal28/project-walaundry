@@ -1,0 +1,226 @@
+.main_container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(231, 232, 255);
+  padding: 20px;
+}
+.container {
+  width: 100%;
+}
+.main_header_container {
+  position: relative;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid rgba(34, 48, 85);
+}
+.header {
+  color: rgba(34, 48, 85);
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+/* konten */
+/* tabel */
+.tableCont {
+  padding: 20px;
+  box-shadow: 0 3px 5px darkgray;
+  border-radius: 10px;
+}
+.table_head {
+  position: relative;
+  border-radius: 10px 10px 0 0;
+  padding: 10px;
+  background-color: rgba(34, 48, 85);
+  width: 100%;
+  margin-top: 10px;
+}
+.tableCont thead {
+  background-color: white;
+  box-shadow: 0px 0px 1px rgba(34, 48, 85);
+}
+.tableCont thead th {
+  text-align: center;
+}
+.tableCont thead tr th {
+  font-size: 13px;
+}
+.tableCont tbody tr td {
+  text-align: center;
+  padding: 7px 5px;
+  font-size: 13px;
+}
+.tableCont .index {
+  text-align: center;
+  font-weight: bold;
+}
+.tableCont .action {
+  display: flex;
+  justify-content: space-evenly;
+}
+.tableCont .update {
+  background-color: rgba(34, 48, 85);
+}
+.tableCont .delete {
+  background-color: rgba(34, 48, 85);
+}
+.tableCont tbody i {
+  font-size: 12px;
+  border-radius: 5px;
+  padding: 8px;
+  color: white;
+}
+.table_footer {
+  padding: 10px;
+  border-radius: 0 0 10px 10px;
+  background-color: rgba(34, 48, 85);
+  display: flex;
+  justify-content: center;
+}
+.pagination {
+  display: flex;
+  width: fit-content;
+}
+.pagination span {
+  cursor: pointer;
+  color: blue;
+  font-size: 14px;
+  margin-right: 12px;
+  text-decoration: none;
+}
+.pagination span:hover {
+  font-weight: bold;
+  color: white;
+}
+/* form */
+.formMaincont {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.46);
+  padding: 30px;
+}
+.formCont {
+  width: 60%;
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  color: rgba(34, 48, 85);
+  background-color: lightgray;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 5px 10px lightgray;
+}
+.formCont .headerForm {
+  margin: 10px 10px 10px 0;
+  padding: 5px;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: rgba(34, 48, 85);
+  text-shadow: 0 0px 8px lightgrey;
+}
+.formCont .back {
+  color: rgba(34, 48, 85, 0.413);
+  cursor: pointer;
+  font-size: 40px;
+  position: absolute;
+  top: -8px;
+  right: 0;
+  transition: all 0.3s;
+}
+.formCont .back:hover {
+  color: rgba(34, 48, 85);
+  -webkit-text-stroke: 2px rgba(34, 48, 85);
+}
+.formCont .back:active {
+  top: -5px;
+}
+.formCont .submit {
+  margin: 0 auto;
+  padding: 5px;
+  color: white;
+  width: 200px;
+  background-color: rgba(34, 48, 85);
+  border-radius: 20px;
+  border: 0;
+}
+.formCont .submit:hover {
+  background-color: rgb(8, 17, 40);
+  text-shadow: 0 0 5px;
+}
+
+/*  button  */
+
+.btn {
+  background-color: rgba(34, 48, 85);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-radius: 5px;
+  width: 100px;
+  color: white;
+  padding: 7px;
+  border: none;
+  display: flex;
+  justify-content: space-around;
+  transition: all 0.3s;
+}
+.btn:hover {
+  background-color: rgb(15, 25, 54);
+  text-shadow: 0 0 2px white;
+}
+
+/* sukses masukkan data */
+.alertCont {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  background-color: rgb(168, 255, 168);
+  position: fixed;
+  top: 20px;
+  left: 46%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 300px;
+  padding: 20px 20px;
+  border: 2px solid rgba(0, 128, 0, 0.498);
+  border-radius: 8px;
+  transition: all 0.4s;
+  transform: scale(0);
+  z-index: 3;
+}
+.alertGagalCont {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  background-color: rgb(255, 153, 153);
+  position: fixed;
+  top: 20px;
+  left: 46%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 300px;
+  padding: 20px 20px;
+  border: 2px solid rgb(137, 0, 0);
+  border-radius: 8px;
+  transition: all 0.4s;
+  transform: scale(0);
+  z-index: 3;
+}
+.scale {
+  animation: alert 1s;
+  transform: scale(1);
+}
+@keyframes alert {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

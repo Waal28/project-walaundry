@@ -1,0 +1,83 @@
+.main_container {
+  width: 100%;
+  height: 100vh;
+  padding: 20px;
+  background-color: rgb(231, 232, 255);
+  position: relative;
+  overflow-y: auto;
+}
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.main_header_container {
+  position: relative;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid rgba(34, 48, 85);
+}
+.header {
+  color: rgba(34, 48, 85);
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.cardTableCont {
+  display: flex;
+  width: 100%;
+}
+/* sukses masukkan data */
+.alertCont {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  background-color: rgb(168, 255, 168);
+  position: fixed;
+  top: 20px;
+  left: 46%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 300px;
+  padding: 20px 20px;
+  border: 2px solid rgba(0, 128, 0, 0.498);
+  border-radius: 8px;
+  transition: all 0.4s;
+  transform: scale(0);
+  z-index: 3;
+}
+.alertGagalCont {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  background-color: rgb(255, 153, 153);
+  position: fixed;
+  top: 20px;
+  left: 46%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 300px;
+  padding: 20px 20px;
+  border: 2px solid rgb(137, 0, 0);
+  border-radius: 8px;
+  transition: all 0.4s;
+  transform: scale(0);
+  z-index: 3;
+}
+.scale {
+  animation: alert 1s;
+  transform: scale(1);
+}
+@keyframes alert {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

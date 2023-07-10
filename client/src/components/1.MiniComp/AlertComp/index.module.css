@@ -1,0 +1,78 @@
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* sukses */
+.alertTitle {
+  display: flex;
+  align-items: center;
+}
+.silang i {
+  color: green;
+  font-size: 25px;
+  height: 25px;
+  cursor: pointer;
+  transition: all 0.3s;
+  transform: scale(1);
+}
+.alertTitle i {
+  font-weight: bold;
+  color: green;
+  font-size: 20px;
+  animation: ceklis 4s infinite;
+}
+.alertTitle p {
+  font-weight: bold;
+  color: green;
+  font-size: 13px;
+  text-shadow: 0 0 4px white;
+  padding: 0;
+  margin: 0 0 0 10px;
+}
+.silang i:hover {
+  text-shadow: 0 0 2px darkgreen;
+}
+/* gagal */
+.alertTitleGagal {
+  display: flex;
+  align-items: center;
+}
+.silangGagal i {
+  color: red;
+  font-size: 25px;
+  height: 25px;
+  cursor: pointer;
+  transition: all 0.3s;
+  transform: scale(1);
+}
+.alertTitleGagal i {
+  font-weight: bold;
+  color: red;
+  font-size: 20px;
+  animation: ceklis 4s infinite;
+}
+.alertTitleGagal p {
+  font-weight: bold;
+  color: red;
+  font-size: 13px;
+  text-shadow: 0 0 4px white;
+  padding: 0;
+  margin: 0 0 0 10px;
+}
+.silangGagal i:hover {
+  text-shadow: 0 0 2px darkred;
+}
+
+@keyframes ceklis {
+  0%,
+  50%,
+  100% {
+    transform: scale(1.4);
+  }
+  25%,
+  75% {
+    transform: scale(1);
+  }
+}

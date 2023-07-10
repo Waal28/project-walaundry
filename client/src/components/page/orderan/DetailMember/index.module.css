@@ -1,0 +1,62 @@
+.container {
+  border-radius: 10px;
+  box-shadow: 0 5px 10px darkgray;
+  color: rgba(34, 48, 85);
+  padding: 20px;
+  position: relative;
+  opacity: 0;
+  transition: all 0.4s;
+  background-color: white;
+}
+
+.container th,
+.container td,
+.container p {
+  font-size: 12px;
+}
+.container th {
+  text-align: center;
+}
+.container hr {
+  border-top: 2px solid black;
+  border-bottom: 1px solid black;
+  height: 5px;
+}
+/* fade */
+.fade {
+  opacity: 1;
+}
+.container .back {
+  color: rgba(34, 48, 85, 0.413);
+  cursor: pointer;
+  font-size: 40px;
+  position: absolute;
+  top: -8px;
+  right: 0;
+  transition: all 0.3s;
+}
+.container .back:hover {
+  color: rgba(34, 48, 85);
+  -webkit-text-stroke: 2px rgba(34, 48, 85);
+}
+.container .back:active {
+  top: -5px;
+}
+/* print */
+.ContTablePrint {
+  margin: 50px;
+}
+.cetak {
+  position: absolute;
+  top: 8px;
+  left: 10px;
+  font-size: 16px;
+  z-index: 99;
+  color: grey;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.cetak:hover {
+  font-size: 18px;
+  color: rgba(34, 48, 85);
+}

@@ -1,0 +1,26 @@
+.container {
+  border-radius: 10px;
+  box-shadow: 0 5px 10px darkgray;
+  padding: 5px 0px 0;
+}
+.header {
+  padding: 3px;
+  text-align: center;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: rgba(34, 48, 85);
+  text-shadow: 0 0px 8px lightgrey;
+}
+.hiddenTrial {
+  background-color: #e7e8ff;
+  width: 120px;
+  height: 20px;
+  position: absolute;
+  bottom: 0px;
+}
+.chart {
+  width: 90%;
+  margin: auto;
+  position: relative;
+}

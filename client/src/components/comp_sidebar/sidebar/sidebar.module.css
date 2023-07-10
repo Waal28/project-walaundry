@@ -1,0 +1,27 @@
+.main {
+  display: flex;
+  height: 100vh;
+}
+
+.container {
+  height: 100vh;
+  width: 90%;
+  overflow: auto;
+}
+.sidebar {
+  max-width: 260px;
+  color: white;
+  background-color: rgba(34, 48, 85, 255);
+  height: 100%;
+  overflow: auto;
+}
+
+img {
+  max-width: 60%;
+}
+.imgcont {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,143 @@
+.card {
+  position: relative;
+  margin: 5px;
+  padding: 20px;
+  width: 180px;
+  height: 100px;
+  border-radius: 10px;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+  transition: all 0.2s;
+}
+
+.card:hover {
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+  transform: scale(1.01);
+}
+
+.card__title {
+  font-size: 16px;
+  color: #ffffff;
+}
+.card__jumlah {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 25px;
+  position: absolute;
+  bottom: 15px;
+  border-radius: 5px;
+  margin: 0;
+  font-weight: 600;
+  width: 85px;
+  text-align: center;
+  background-color: #ffffff4f;
+  color: #ffffff;
+}
+/* CARD BACKGROUNDS */
+
+.card_2 .svg {
+  position: absolute;
+  right: 10px;
+  bottom: 25px;
+}
+.card_3 .svg {
+  position: absolute;
+  right: 10px;
+  bottom: 25px;
+}
+.card_4 .svg {
+  position: absolute;
+  right: 10px;
+  bottom: 27px;
+}
+.card_5 .svg {
+  position: absolute;
+  right: 10px;
+  bottom: 22px;
+}
+.card_5 .svg {
+  position: absolute;
+  right: 10px;
+  bottom: 19px;
+}
+.card_6 .svg {
+  position: absolute;
+  right: 10px;
+  bottom: 22px;
+}
+
+.card_2 {
+  background: linear-gradient(
+    178.1deg,
+    rgb(60, 55, 106) 8.5%,
+    rgb(23, 20, 69) 82.4%
+  );
+}
+
+.card_3 {
+  background: linear-gradient(
+    110.6deg,
+    rgb(156, 116, 129) -18.3%,
+    rgb(67, 54, 74) 16.4%,
+    rgb(47, 48, 67) 68.2%,
+    rgb(27, 23, 36) 99.1%
+  );
+}
+
+.card_4 {
+  background: linear-gradient(
+    118.4deg,
+    rgb(122, 35, 52) 27.5%,
+    rgb(62, 9, 27) 92.7%
+  );
+}
+
+.card_5 {
+  background-image: linear-gradient(
+    109.6deg,
+    rgba(43, 1, 91, 1) 13.4%,
+    rgba(122, 2, 54, 1) 100.2%
+  );
+}
+.card_6 {
+  background: radial-gradient(
+    759px at 14% 22.3%,
+    rgb(10, 64, 88) 0%,
+    rgb(15, 164, 102) 90%
+  );
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1600px) {
+  .cards {
+    justify-content: center;
+  }
+}
+
+/* loading style */
+.loader_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lds_dual_ring {
+  display: inline-block;
+}
+.lds_dual_ring:after {
+  content: " ";
+  display: block;
+  width: 25px;
+  height: 25px;
+  margin: 6px;
+  border-radius: 50%;
+  border: 3px solid white;
+  border-color: white transparent white transparent;
+  animation: lds_dual_ring 1.2s linear infinite;
+}
+@keyframes lds_dual_ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

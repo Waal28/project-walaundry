@@ -1,0 +1,46 @@
+{
+  "desc": "Walaundry berdiri di Pekanbaru didirikan oleh wal husna faizul, konsep usaha laundry kiloan di Indonesia diyakini pertama kali lahir berasal dari kota pelajar ini. Walaundry merupakan waralaba pertama yang bergerak dibidang Bisnis Laundry Kiloan atau binatu dengan konsep cuci dan seterika per kilogram. Dikelola oleh staff ahli yang handal dan berpengalaman dibidangnya membuat Walaundry layak menjadi yang terdepan dalam pilihan berwirausaha. Sejak 2006 hingga kini Walaundry telah berkembang menjadi perusahaan dengan 258 outlet lebih tersebar di seluruh Indonesia. Didukung support system yang handal Walaundry selalu memberikan pelayanan yang terbaik dibidangnya.",
+  "outlets": [
+    {
+      "_id": 333,
+      "nama": "Walaundry Marpoyan",
+      "alamat": "Jl. Kaharuddin Nst No.17, Simpang Tiga",
+      "kontak": "082266554433"
+    },
+    {
+      "_id": 444,
+      "nama": "Walaundry Panam",
+      "alamat": "Jl. HR. Soebrantas No.61 A, Sidomulyo Bar",
+      "kontak": "081122334455"
+    }
+  ],
+  "filosofi": "Memberikan manfaat bagi banyak orang",
+  "visi": "Memberikan kemudahan hidup melalui pelayanan Laundry, yang merupakan laundry pilihan pertama bagi seluruh keluarga di dunia.",
+  "misi": "Memberikan jasa laundry yang professional dengan pelayanan yang penuh perhatian, tulus, ramah, dan orientasi pada kepuasan, kebutuhan, kesempurnaan dan hubungan erat sepanjang masa",
+  "proses": [
+    {
+      "_id": 1,
+      "nama": "Proses pencucian kami lakukan dengan mengikuti prosedur pencucian berdasarkan washing label tips dari masing-masing material."
+    },
+    {
+      "_id": 2,
+      "nama": "Pencucian dilakukan dengan menggunakan air yang telah melalui proses penyaringan sehingga air menjadi jernih dan tidak merusak warna asli bahan yang dicuci."
+    },
+    {
+      "_id": 3,
+      "nama": "Kami melakukan manajemen barang yang baik sehingga dapat meminimalisasi resiko tertukar dan kehilangan."
+    },
+    {
+      "_id": 4,
+      "nama": "Kami memisahkan pencucian bahan-bahan sesuai dengan warna , jenis , dan vendor."
+    },
+    {
+      "_id": 5,
+      "nama": "Kami memiliki fasilitas workshop yang memadai dengan peralatan pendukung yang berkualitas serta karyawan yang berpengalaman mengenai laundry."
+    },
+    {
+      "_id": 6,
+      "nama": "Pencucian linen di ambil sesuai jadwal yang telah di sepakati bersama, dan pembayaran di lakukan di minggu ke 2 dan minggu ke 4 setiap bulan nya atau telah di sepakati bersama."
+    }
+  ]
+}

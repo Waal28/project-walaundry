@@ -1,0 +1,192 @@
+:root {
+  --gray: #555;
+  --navy: rgba(34, 48, 85);
+  --green-blue: #92effd;
+  --white: #fff;
+}
+.mainCont {
+  margin-right: 10px;
+  position: absolute;
+  right: 0;
+  width: max-content;
+}
+.navigation {
+  font-weight: 600;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 5px;
+  background: var(--white);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.304);
+  overflow: hidden;
+  transition: height 0.3s, width 0.3s;
+  transition-delay: 0s, 0.5s;
+  z-index: 99;
+}
+
+.navigation .user_box {
+  position: relative;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  transition: 0.3s;
+  transition-delay: 0.3s;
+}
+
+.navigation .user_box .username {
+  font-size: 14px;
+  white-space: nowrap;
+  color: var(--navy);
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+.navigation .user_box .username p {
+  margin: 0;
+}
+.navigation .user_box .image_box {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background: var(--white);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navigation .user_box .image_box img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: contain;
+}
+
+.navigation .menu_toggle {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin: 0;
+}
+
+.navigation .menu_toggle::before {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 2px;
+  background: var(--gray);
+  transform: translateY(-10px);
+  box-shadow: 0 10px var(--gray);
+  transition: 0.3s;
+}
+
+.navigation .menu_toggle::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 2px;
+  background: var(--gray);
+  transform: translateY(10px);
+  transition: 0.3s;
+}
+
+.menu {
+  position: absolute;
+  top: 0;
+  z-index: 3;
+  width: 100%;
+  border-radius: 5px;
+  max-height: 0;
+  overflow: hidden;
+  background: var(--white);
+  margin-top: 50px;
+  border-top: 1px solid rgba(0, 0, 0, 0.197);
+  transition: width 0.3s, max-height 0.3s;
+  transition-delay: 0.2s;
+}
+
+.menu li {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 20px 0;
+  font-size: 14px;
+  color: var(--navy);
+}
+.menu li i {
+  font-size: 16px;
+}
+
+.menu li:hover {
+  color: var(--gray);
+  font-weight: bold;
+}
+
+.navigation.active .menu_toggle::before {
+  transform: translateY(0px) rotate(45deg);
+  box-shadow: none;
+}
+
+.navigation.active .menu_toggle::after {
+  transform: translateY(0px) rotate(-45deg);
+}
+
+.navigation.active {
+  transition: width 0.3s, height 0.3s9;
+  transition-delay: 0s, 0.3s;
+}
+
+.navigation.active .user_box {
+  width: calc(100% - 50px);
+  transition-delay: 0s;
+}
+
+.menu_active {
+  max-height: 300px;
+  overflow: hidden;
+}
+/* .main_cont {
+  margin-top: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  background-color: lightgrey;
+  box-shadow: 0 3px 3px darkgray;
+}
+.button {
+  border-radius: 5px;
+  width: 100px;
+  background-color: rgba(34, 48, 85, 255);
+  color: white;
+  padding: 12px 50px;
+  transition: 2s;
+}
+.button:hover {
+  width: 200px;
+}
+.opsi {
+  height: 0;
+  list-style-type: none;
+  transition: 3s;
+  overflow: hidden;
+}
+.opsi li {
+  padding: 10px;
+}
+.link {
+  text-decoration: none;
+  padding-top: 20px;
+}
+
+.active {
+  height: 100px;
+  background-color: aqua;
+  overflow: hidden;
+} */

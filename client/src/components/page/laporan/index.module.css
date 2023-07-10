@@ -1,0 +1,169 @@
+.main_container {
+  width: 100%;
+  padding: 20px;
+  background-color: rgb(231, 232, 255);
+  position: relative;
+  overflow-y: auto;
+}
+.main_header_container {
+  position: relative;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid rgba(34, 48, 85);
+}
+.header {
+  color: rgba(34, 48, 85);
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.container {
+  width: 100%;
+  display: flex;
+  padding: 0 11px;
+  flex-direction: column;
+}
+.table_Main_container {
+  border-radius: 10px;
+  box-shadow: 0 5px 10px darkgray;
+  color: rgba(34, 48, 85);
+  padding: 20px;
+  width: 100%;
+}
+.table_cont tr td,
+.table_cont tr th {
+  font-size: 13px;
+}
+.table_cont thead {
+  background-color: white;
+  box-shadow: 0px 0px 1px rgba(34, 48, 85);
+}
+.table_head {
+  position: relative;
+  border-radius: 10px 10px 0 0;
+  padding: 10px;
+  background-color: rgba(34, 48, 85);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.table_cont thead th,
+.table_cont tbody td {
+  padding: 8px 10px;
+  text-align: center;
+}
+.table_cont tbody .bagian {
+  min-width: 150px;
+}
+.table_cont tbody .view {
+  min-width: 60px;
+}
+.table_cont tbody .actions {
+  min-width: 100px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.table_cont tbody i {
+  font-size: 12px;
+  border-radius: 5px;
+  padding: 8px;
+  color: white;
+}
+.table_cont tbody i:hover {
+  filter: brightness(60%);
+}
+.table_cont .details {
+  background-color: rgba(34, 48, 85);
+}
+.table_cont .delete {
+  background-color: rgba(34, 48, 85);
+}
+.table_cont .update {
+  background-color: rgba(34, 48, 85);
+}
+.table_footer {
+  padding: 10px;
+  border-radius: 0 0 10px 10px;
+  background-color: rgba(34, 48, 85);
+  display: flex;
+  justify-content: center;
+}
+.drop button {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.drop .dropItem:hover {
+  background-color: lightgray;
+}
+/* button */
+.btn {
+  background-color: rgba(34, 48, 85);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-radius: 5px;
+  width: max-content;
+  color: white;
+  padding: 7px 15px;
+  border: none;
+  transition: all 0.3s;
+}
+.btn:hover {
+  background-color: rgb(15, 25, 54);
+  text-shadow: 0 0 2px white;
+}
+
+/* rincian */
+.filter {
+  border-radius: 10px;
+  box-shadow: 0 5px 10px darkgray;
+  color: rgba(34, 48, 85);
+  padding: 20px;
+}
+.filter input {
+  margin: 10px 0;
+  padding: 8px;
+  box-shadow: 0 3px 6px darkgray;
+}
+.filter i {
+  font-size: 20px;
+}
+.rincian {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px darkgray;
+  color: rgba(34, 48, 85);
+  padding: 20px;
+}
+.rincian td {
+  border-bottom: 1px solid darkgray;
+}
+/* print */
+.ContTablePrint {
+  margin: 50px;
+}
+.ContTablePrint h4,
+.ContTablePrint p {
+  text-align: center;
+}
+.ContTablePrint p {
+  margin: 0;
+}
+.tablePrint {
+  margin: 10px auto;
+  width: 100%;
+}
+.tablePrint th {
+  text-align: center;
+}
+.tablePrint th,
+.tablePrint td {
+  border: 1px solid black;
+  padding: 5px;
+  font-size: 12px;
+}

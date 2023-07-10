@@ -1,0 +1,113 @@
+.main_container {
+  width: 100%;
+  padding: 20px;
+  background-color: rgb(231, 232, 255);
+  position: relative;
+  overflow-y: auto;
+}
+.cardContainer {
+  padding: 10px 0;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  box-shadow: 0 5px 8px 1px darkgray;
+}
+.main_header_container {
+  border-bottom: 2px solid rgba(34, 48, 85);
+  position: relative;
+  padding-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.header_container {
+  width: 100%;
+}
+.header {
+  color: rgba(34, 48, 85);
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.welcome {
+  width: 100%;
+  line-height: 50px;
+  background-color: rgba(34, 48, 85);
+  color: white;
+  white-space: nowrap;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.welcome h3 {
+  font-size: 16px;
+  display: inline-block;
+  padding-left: 100%;
+  animation: marquee 15s linear infinite;
+}
+@keyframes marquee {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
+
+.table_container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* sukses masukkan data */
+.alertCont {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  background-color: rgb(168, 255, 168);
+  position: fixed;
+  top: 20px;
+  left: 46%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 300px;
+  padding: 20px 20px;
+  border: 2px solid rgba(0, 128, 0, 0.498);
+  border-radius: 8px;
+  transition: all 0.4s;
+  transform: scale(0);
+  z-index: 3;
+}
+.alertGagalCont {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  background-color: rgb(255, 153, 153);
+  position: fixed;
+  top: 20px;
+  left: 46%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 300px;
+  padding: 20px 20px;
+  border: 2px solid rgb(137, 0, 0);
+  border-radius: 8px;
+  transition: all 0.4s;
+  transform: scale(0);
+  z-index: 3;
+}
+.scale {
+  animation: alert 1s;
+  transform: scale(1);
+}
+@keyframes alert {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

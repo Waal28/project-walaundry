@@ -1,0 +1,144 @@
+.container {
+  border-radius: 10px;
+  box-shadow: 0 5px 10px darkgray;
+  color: rgba(34, 48, 85);
+  padding: 0 30px 20px;
+}
+.header {
+  padding: 3px;
+  text-align: center;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: rgba(34, 48, 85);
+  text-shadow: 0 0px 8px lightgrey;
+}
+.table_cont thead {
+  background-color: white;
+  box-shadow: 0px 0px 1px rgba(34, 48, 85);
+}
+.table_head {
+  border-radius: 10px 10px 0 0;
+  padding: 10px;
+  background-color: rgba(34, 48, 85);
+  width: 100%;
+}
+.table_cont thead th {
+  text-align: center;
+}
+.table_cont thead th,
+.table_cont tbody td {
+  padding: 8px 0;
+  font-size: 13px;
+}
+.table_cont tbody .bagian {
+  min-width: 150px;
+}
+.table_cont tbody .view {
+  min-width: 60px;
+}
+.table_cont tbody .actions {
+  min-width: 100px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.table_cont tbody i {
+  font-size: 12px;
+  border-radius: 5px;
+  padding: 8px;
+  color: white;
+}
+.table_cont tbody i:hover {
+  filter: brightness(60%);
+}
+.table_cont .details {
+  background-color: rgba(34, 48, 85);
+}
+.table_cont .delete {
+  background-color: rgba(34, 48, 85);
+}
+.table_footer {
+  padding: 9px;
+  border-radius: 0 0 10px 10px;
+  background-color: rgba(34, 48, 85);
+  display: flex;
+  justify-content: center;
+}
+.pagination {
+  display: flex;
+  width: fit-content;
+}
+.pagination span {
+  cursor: pointer;
+  color: blue;
+  font-size: 14px;
+  margin-right: 12px;
+  text-decoration: none;
+}
+.pagination span:hover {
+  font-weight: bold;
+  color: white;
+}
+.drop button {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.drop .dropItem:hover {
+  background-color: lightgray;
+}
+
+/* button */
+
+.btnSort {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-radius: 5px;
+  background-color: rgba(34, 48, 85);
+  width: 100px;
+  color: white;
+  padding: 7px;
+  border: none;
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  transition: all 0.3s;
+}
+.btn:hover {
+  background-color: rgb(0, 81, 0);
+  text-shadow: 0 0 2px white;
+}
+.btn:active {
+  position: absolute;
+  bottom: 5px;
+}
+
+/* loading style */
+.loader_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lds_dual_ring {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+}
+.lds_dual_ring:after {
+  content: " ";
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid rgba(34, 48, 85);
+  border-color: rgba(34, 48, 85) transparent rgba(34, 48, 85) transparent;
+  animation: lds_dual_ring 1.2s linear infinite;
+}
+@keyframes lds_dual_ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

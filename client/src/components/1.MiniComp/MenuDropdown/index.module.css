@@ -1,0 +1,25 @@
+.sidebar_item {
+  cursor: pointer;
+}
+.sidebar_title:hover {
+  height: 100%;
+  width: 100%;
+  font-weight: bold;
+}
+.toggle_btn {
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+.sidebar_item.open > .toggle_btn {
+  transform: rotate(180deg);
+}
+.sidebar_content {
+  margin-left: 5px;
+  width: max-content;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s;
+}
+.sidebar_item.open > .sidebar_content {
+  max-height: 300px;
+}

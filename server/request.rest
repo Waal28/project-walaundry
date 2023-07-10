@@ -1,0 +1,23 @@
+GET http://localhost:3004/users
+
+###
+POST http://localhost:3004/login
+Content-Type: application/json
+
+{
+    "username": "Iwal",
+    "password": "123456"
+}
+
+###
+PATCH http://localhost:3004/users/649eda3a2df5c40e2f029656
+Content-Type: application/json
+
+{
+   "hakAkses": "kasir",
+    "username": "iwal",
+    "password": "1234567"
+}
+
+###
+DELETE  http://localhost:3004/users/649f8d3ddee6d0b99110f9d5

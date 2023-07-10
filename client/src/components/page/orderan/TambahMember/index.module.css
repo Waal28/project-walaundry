@@ -1,0 +1,32 @@
+.container {
+  border-radius: 10px;
+  box-shadow: 0 5px 10px darkgray;
+  color: rgba(34, 48, 85);
+}
+.header {
+  padding: 19px 0 5px;
+  text-align: center;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: rgba(34, 48, 85, 255);
+  text-shadow: 0 0px 8px lightgrey;
+}
+.container i {
+  color: rgba(34, 48, 85);
+}
+.container b {
+  color: rgba(34, 48, 85);
+  font-size: 12px;
+}
+.container input,
+.container select,
+.container span,
+.container textarea {
+  box-shadow: 0 3px 5px darkgray;
+  font-size: 13px;
+  padding: 8px;
+}
+.container select {
+  cursor: pointer;
+}

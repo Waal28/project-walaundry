@@ -1,0 +1,84 @@
+.container {
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px darkgray;
+  color: rgba(34, 48, 85);
+  opacity: 1;
+  margin: -50% auto 0;
+  transition: all 1s;
+  width: 70%;
+  padding: 0 50px 20px;
+}
+.header {
+  padding: 25px;
+  text-align: center;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: rgba(34, 48, 85);
+  text-shadow: 0 0px 8px lightgrey;
+}
+.container span {
+  box-shadow: 0px 3px 5px darkgray;
+  padding: 0 20px;
+}
+.container input,
+.container select,
+.container input[type="radio"] + label {
+  box-shadow: 0px 2px 5px darkgray;
+  padding: 10px;
+}
+.container input[type="radio"] {
+  display: none;
+}
+.container input[type="radio"] + label {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+}
+.container input[type="radio"]:checked + label {
+  background-image: none;
+  color: white;
+  background-color: rgba(34, 48, 85);
+}
+/* button */
+.container button {
+  border: 0;
+  padding: 0;
+  background-color: rgba(34, 48, 85);
+  box-shadow: 0px 3px 5px darkgray;
+  color: white;
+  width: 100px;
+  padding: 8px;
+  border-radius: 5px;
+}
+.container button:hover {
+  background-color: rgb(0, 13, 50);
+  text-shadow: 0 0 5px white;
+}
+/* fade */
+.fade {
+  margin-top: 0;
+  opacity: 1;
+}
+.container .back {
+  color: rgba(34, 48, 85, 0.413);
+  cursor: pointer;
+  font-size: 40px;
+  position: absolute;
+  top: -8px;
+  right: 0;
+  transition: all 0.3s;
+}
+.container .back:hover {
+  color: rgba(34, 48, 85);
+  -webkit-text-stroke: 2px rgba(34, 48, 85);
+}
+.container .back:active {
+  top: -5px;
+}

@@ -1,0 +1,201 @@
+.container {
+  border-radius: 10px;
+  box-shadow: 0 5px 10px darkgray;
+  color: rgba(34, 48, 85);
+  padding: 20px;
+  width: 100%;
+}
+.table_cont tr td,
+.table_cont tr th {
+  font-size: 13px;
+}
+.table_cont thead {
+  background-color: white;
+  box-shadow: 0px 0px 1px rgba(34, 48, 85);
+}
+.table_head {
+  border-radius: 10px 10px 0 0;
+  padding: 10px;
+  background-color: rgba(34, 48, 85);
+  width: 100%;
+}
+.table_cont thead th,
+.table_cont tbody td {
+  padding: 8px 10px;
+  text-align: center;
+}
+.table_cont tbody .bagian {
+  min-width: 150px;
+}
+.table_cont tbody .view {
+  min-width: 60px;
+}
+.table_cont tbody .actions {
+  min-width: 100px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.table_cont tbody i {
+  font-size: 12px;
+  border-radius: 5px;
+  padding: 8px;
+  color: white;
+}
+.table_cont tbody i:hover {
+  filter: brightness(60%);
+}
+.table_cont .details {
+  background-color: rgba(34, 48, 85);
+}
+.table_cont .delete {
+  background-color: rgba(34, 48, 85);
+}
+.table_cont .update {
+  background-color: rgba(34, 48, 85);
+}
+.table_footer {
+  padding: 10px;
+  border-radius: 0 0 10px 10px;
+  background-color: rgba(34, 48, 85);
+  display: flex;
+  justify-content: center;
+}
+.pagination {
+  display: flex;
+  width: fit-content;
+}
+.pagination span {
+  cursor: pointer;
+  color: blue;
+  font-size: 14px;
+  margin-right: 12px;
+  text-decoration: none;
+}
+.pagination span:hover {
+  font-weight: bold;
+  color: white;
+}
+.drop button {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.drop .dropItem:hover {
+  background-color: lightgray;
+}
+
+/* button */
+.btnAddCont {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  position: relative;
+  height: 45px;
+}
+.btnAddCont .btn {
+  background-color: rgba(34, 48, 85);
+}
+.btnAddCont .btn:hover {
+  background-color: rgb(15, 25, 54);
+  text-shadow: 0 0 2px white;
+}
+.btnCont {
+  height: 30px;
+}
+.btn {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-radius: 5px;
+  background-color: rgba(34, 48, 85);
+  width: 100px;
+  color: white;
+  padding: 7px;
+  border: none;
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  transition: all 0.3s;
+}
+.btn:hover {
+  background-color: rgb(0, 81, 0);
+  text-shadow: 0 0 2px white;
+}
+.btn:active {
+  position: absolute;
+  bottom: 5px;
+}
+/* form */
+.formMaincont {
+  z-index: 5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.46);
+  padding: 30px;
+}
+.formCont {
+  z-index: 99;
+  width: 60%;
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  color: rgba(34, 48, 85);
+  background-color: lightgray;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 5px 10px lightgray;
+}
+.formCont .headerForm {
+  margin: 10px 10px 10px 0;
+  padding: 5px;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: rgba(34, 48, 85);
+  text-shadow: 0 0px 8px lightgrey;
+}
+.formCont .back {
+  color: rgba(34, 48, 85, 0.413);
+  cursor: pointer;
+  font-size: 40px;
+  position: absolute;
+  top: -8px;
+  right: 0;
+  transition: all 0.3s;
+}
+.formCont .back:hover {
+  color: rgba(34, 48, 85);
+  -webkit-text-stroke: 2px rgba(34, 48, 85);
+}
+.formCont .back:active {
+  top: -5px;
+}
+.formCont .submit {
+  margin: 0 auto;
+  padding: 5px;
+  color: white;
+  width: 200px;
+  background-color: rgba(34, 48, 85);
+  border-radius: 20px;
+  border: 0;
+}
+.formCont .submit:hover {
+  background-color: rgb(8, 17, 40);
+  text-shadow: 0 0 5px;
+}
+/* Alert */
+
+.alert {
+  text-align: center;
+}
+
+/* button tambah */
+.btnAddCont .btnDisable {
+  background-color: rgb(154, 157, 255);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-radius: 5px;
+  width: 100px;
+  color: white;
+  padding: 7px;
+  border: none;
+  display: flex;
+  justify-content: space-around;
+}

@@ -1,0 +1,167 @@
+.main_container {
+  position: relative;
+  width: 100%;
+  background-color: rgba(255, 208, 210, 0.511);
+  padding: 20px;
+}
+.container {
+  width: 100%;
+}
+.main_header_container {
+  position: relative;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid rgba(34, 48, 85);
+}
+.header {
+  color: rgba(34, 48, 85);
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+/* konten */
+/* tabel */
+.tableCont {
+  padding: 30px;
+  box-shadow: 0 3px 5px darkgray;
+  border-radius: 10px;
+}
+.tableCont thead th {
+  text-align: center;
+  border-radius: 6px;
+}
+.tableCont thead tr th {
+  background-color: darkgrey;
+}
+.tableCont tbody tr td {
+  padding: 7px 5px;
+}
+.tableCont .index {
+  text-align: center;
+  font-weight: bold;
+}
+.tableCont .action {
+  display: flex;
+  justify-content: space-between;
+}
+.tableCont .update {
+  background-color: rgb(0, 81, 255);
+}
+.tableCont .delete {
+  background-color: red;
+}
+.tableCont tbody i {
+  font-size: 12px;
+  border-radius: 5px;
+  padding: 8px;
+  color: white;
+}
+.table_footer {
+  border-radius: 0 0 6px 6px;
+  padding: 5px;
+  background-color: darkgray;
+  display: flex;
+  justify-content: center;
+}
+.pagination {
+  display: flex;
+  width: fit-content;
+}
+.pagination span {
+  cursor: pointer;
+  color: blue;
+  font-size: 14px;
+  margin-right: 12px;
+  text-decoration: none;
+}
+.pagination span:hover {
+  font-weight: bold;
+  color: white;
+}
+/* form */
+.formMaincont {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.46);
+  padding: 30px;
+}
+.formCont {
+  width: 60%;
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  color: rgba(34, 48, 85);
+  background-color: lightgray;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 5px 10px lightgray;
+}
+.formCont .headerForm {
+  margin: 10px 10px 10px 0;
+  padding: 5px;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: rgba(34, 48, 85);
+  text-shadow: 0 0px 8px lightgrey;
+}
+.formCont .back {
+  color: rgba(34, 48, 85, 0.413);
+  cursor: pointer;
+  font-size: 40px;
+  position: absolute;
+  top: -8px;
+  right: 0;
+  transition: all 0.3s;
+}
+.formCont .back:hover {
+  color: rgba(34, 48, 85);
+  -webkit-text-stroke: 2px rgba(34, 48, 85);
+}
+.formCont .back:active {
+  top: -5px;
+}
+.formCont .submit {
+  margin: 0 auto;
+  padding: 5px;
+  color: white;
+  width: 200px;
+  background-color: rgba(34, 48, 85);
+  border-radius: 20px;
+  border: 0;
+}
+.formCont .submit:hover {
+  background-color: rgb(8, 17, 40);
+  text-shadow: 0 0 5px;
+}
+
+/*  button  */
+.btnCont {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  position: relative;
+  height: 50px;
+}
+.btn {
+  border-radius: 5px;
+  background-color: rgba(34, 48, 85);
+  width: 100px;
+  color: white;
+  padding: 8px;
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  transition: all 0.3s;
+}
+.btn:hover {
+  background-color: rgb(15, 25, 54);
+  text-shadow: 0 0 2px white;
+}
+.btn:active {
+  position: absolute;
+  top: 2px;
+}
